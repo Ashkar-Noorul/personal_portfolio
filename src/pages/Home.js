@@ -5,6 +5,7 @@ import { GitHub } from '@mui/icons-material'
 import "../styles/Home.css"
 
 function Home() {
+  const githubProfileUrl = 'https://github.com/Ashkar-Noorul';
   return (
     <div className='home'>
       <div className='about'>
@@ -15,7 +16,9 @@ function Home() {
           </p>
           <LinkedIn/>
           <Email/>
+          <a href={githubProfileUrl} target='_blank' rel='noopener noreferrer'>
           <GitHub/>
+          </a>
         </div>
       </div>
       <div className='skills'>
